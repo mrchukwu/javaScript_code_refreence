@@ -1,3 +1,4 @@
+'use strict';
 //SET
 //used to remove duplicates
 //doesnt store duplicate items
@@ -43,6 +44,22 @@ const mexicanFoods = new Set([
     'avocado',
     'garlic',
 ]);
+
+//Finding two elements from the two Set data of array
+//find intersection of italianFoods and mexicanFoods
+const commonFoods = [...new Set([...italianFoods].filter(element => mexicanFoods.has(element)))];
+// console.log(commonFoods)
+// Explanation:
+// Spread Operator (...):The spread operator converts the Set to an array, allowing the use of array methods.
+//filter() Method:Filters elements in setA that are also present in setB.
+//has() Method:Checks if an element exists in setB.
+//new Set():Converts the filtered result back into a Set object.
+
+//-----------------------------------------------------------------------
+
+//result is error (checking uo on this)
+// const commonFoods = italianFoods.intersection(mexicanFoods);
+// console.log(...commonFoods)
 
 
 
