@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Converter To CamelCase</title>
+    <style>
+        div.container {
+            width: 40%;
+            margin: 0 auto;
+        }
+        div h1{
+            text-align: center;
+        }
+        div form div,
+        form div label{
+            margin-bottom: 1rem;
+        }
+        form button{
+            cursor: pointer;
+            padding: 0.55rem 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>String Converter To CamelCase</h1>
+        <form action="">
+            <div>
+                <label for="text">Enter an UnderScore separated text</label>
+                <textarea name="text" id="text" cols="40" rows="6"></textarea>
+            </div>
+            <button type="button" id="convertText">Convert to CamelCase</button>
+        </form>
+        <p id="displayResult"> </p>
+    </div>
+
+<script src="./codeChallenge_4.js"></script>
+</body>
+</html>
